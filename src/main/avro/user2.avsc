@@ -1,0 +1,14 @@
+{"namespace": "com.dangets.avroschemaevolution.avro",
+    "type": "record",
+    "name": "User2",
+    "fields": [
+        {"name": "first_name", "type": "string", "default": "unknown"},
+        {"name": "last_name", "type": "string", "default": "unknown"},
+        {"name": "favorite_number",  "type": ["null", "int"]},
+        {"name": "favorite_color", "type": ["null", "string"]},
+
+		//{"name": "name", "type": ["null", "string"], "default": null},
+		{"name": "d_name", "type": ["null", "string"], "default": null, "aliases": ["name"]}
+		//{"name": "d_age", "type": "int", "aliases": ["age"]}
+    ]
+}

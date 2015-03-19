@@ -1,0 +1,10 @@
+{"namespace": "com.dangets.avroschemaevolution.avro",
+    "type": "record",
+    "name": "User1",
+    "fields": [
+        {"name": "name", "type": "string"},
+		{"name": "age", "type": "int"},
+        {"name": "favorite_number",  "type": ["null", "int"]},
+        {"name": "favorite_color", "type": ["null", "string"]}
+    ]
+}
